@@ -1,0 +1,382 @@
+/*
+Theme Name: Quick Start Pack
+Description: All themes css code is here. 
+Author: TwinkleTheme
+Author URI: https://themeforest.net/user/twinkletheme
+Version: 1.0.0
+*/
+
+/*=======================================
+    CSS Index
+=========================================*/
+/*=======================================
+01. Default CSS
+02. Preloader
+
+=======================================*/
+
+/*==========================
+    01. Default CSS
+============================*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #222;
+}
+
+a:focus,
+button:focus {
+    outline: none;
+}
+
+.floatleft {
+    float: left;
+}
+
+.floatright {
+    float: right;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #4b4848;
+    opacity: 0.7;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #4b4848;
+    opacity: 0.7;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #4b4848;
+    opacity: 0.7;
+}
+
+#scrollUp {
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 12px;
+    background: #34495e;
+}
+
+/*==========================
+    02. Preloader
+============================*/
+
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #ddd;
+    z-index: 99;
+}
+
+.preloader .sk-plane,
+.preloader .sk-chase,
+.preloader .sk-bounce,
+.preloader .sk-wave,
+.preloader .sk-pulse,
+.preloader .sk-flow,
+.preloader .sk-swing,
+.preloader .sk-circle,
+.preloader .sk-circle-fade,
+.preloader .sk-grid,
+.preloader .sk-fold,
+.preloader .sk-wander {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    margin: 0;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+.sk-plane,
+.sk-chase-dot:before,
+.sk-bounce-dot,
+.sk-wave-rect,
+.sk-pulse,
+.sk-flow-dot,
+.sk-swing-dot,
+.sk-circle-dot:before,
+.sk-circle-fade-dot:before,
+.sk-grid-cube,
+.sk-fold-cube:before,
+.sk-wander-cube {
+    background-color: yellow;
+}
+
+
+.header-bottom {
+    background-color: #ddd;
+}
+
+.header-bottom h2 {
+    padding: 14px 0;
+    text-transform: uppercase;
+}
+
+.main-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+}
+
+.main-menu ul li a {
+    color: #666;
+    font-size: 16px;
+    padding: 20px 0;
+    text-decoration: none;
+    display: block;
+}
+
+.main-menu ul li:hover>a {
+    color: green;
+}
+
+.main-menu ul li ul.dropdown {
+    position: absolute;
+    background-color: #222;
+    color: #fff;
+    width: 250px;
+    top: 110%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.main-menu ul li:hover ul.dropdown {
+    opacity: 1;
+    visibility: visible;
+    transition: .3s;
+    top: 100%;
+}
+
+.main-menu ul li ul.dropdown li {
+    margin: 0;
+    display: block;
+    border-bottom: 1px solid #fff;
+}
+
+.main-menu ul li ul.dropdown li a {
+    padding: 15px 20px;
+    color: #fff;
+    transition: .3s;
+}
+
+.main-menu ul li ul.dropdown li:hover>a {
+    background-color: green;
+    padding-left: 30px;
+    transition: .3s;
+}
+
+/*Third Level*/
+.main-menu ul li ul.dropdown li ul.dropdown {
+    left: 100%;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.main-menu ul li ul.dropdown li:hover ul.dropdown {
+    opacity: 1;
+    visibility: visible;
+    transition: .3s;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+
+.single-project-item {
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+    height: 300px;
+    margin: 0 0 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.project-bg-1 {
+    background-image: url(assets/img/portfolio/01.jpeg);
+}
+
+.project-bg-2 {
+    background-image: url(assets/img/portfolio/02.jpeg);
+}
+
+.project-bg-3 {
+    background-image: url(assets/img/portfolio/03.jpeg);
+}
+
+.project-bg-4 {
+    background-image: url(assets/img/portfolio/04.jpeg);
+}
+
+.project-bg-5 {
+    background-image: url(assets/img/portfolio/05.jpeg);
+}
+
+.project-bg-6 {
+    background-image: url(assets/img/portfolio/06.jpeg);
+}
+
+.project-bg-7 {
+    background-image: url(assets/img/portfolio/07.jpeg);
+}
+
+.project-bg-8 {
+    background-image: url(assets/img/portfolio/08.jpeg);
+}
+
+.project-bg-9 {
+    background-image: url(assets/img/portfolio/09.jpeg);
+}
+
+
+.project-titles {
+    margin: 0 0 50px;
+    padding: 0;
+    list-style: none;
+}
+
+.project-titles li {
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.project-titles li:hover,
+.project-titles li.active {
+    color: #01e9e3;
+}
+
+.single-project-item a,
+.single-project-item span {
+    color: #01e9e3;
+}
+
+.project-hover {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    opacity: 0;
+    transition: .3s;
+}
+
+.project-hover:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: #000;
+    opacity: .7;
+    z-index: -1;
+}
+
+.project-hover a {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 20px;
+}
+
+.project-hover h4 {
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    margin: 0;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.project-hover h4 span {
+    display: block;
+    font-size: 80%;
+    margin-top: 10px;
+}
+
+.single-project-item:hover .project-hover {
+    opacity: 1;
+}
+
+.row.project-list .col-md-4:nth-child(2) .single-project-item,
+.row.project-list .col-md-4:nth-child(4) .single-project-item, 
+.row.project-list .col-md-4:nth-child(6) .single-project-item {
+    height: 615px;
+}
